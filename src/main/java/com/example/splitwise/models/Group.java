@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToMany;
 import lombok.Data;
 
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -16,6 +17,7 @@ public class Group extends BaseModel{
     private List<User> users;
     @ManyToMany
     private List<User> admins;
+    private Date createdAt;
 
     public String getName() {
         return name;
@@ -47,5 +49,13 @@ public class Group extends BaseModel{
 
     public void setAdmins(List<User> admins) {
         this.admins = admins;
+    }
+
+    public Date getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(Date createdAt) {
+        this.createdAt = createdAt;
     }
 }

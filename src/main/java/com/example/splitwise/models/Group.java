@@ -13,10 +13,10 @@ public class Group extends BaseModel{
     private String name;
     private String description;
 
-    @ManyToMany
-    private List<User> users;
-    @ManyToMany
-    private List<User> admins;
+//    @ManyToMany
+//    private List<User> users;
+//    @ManyToMany
+//    private List<User> admins;
     private Date createdAt;
 
     public String getName() {
@@ -35,21 +35,21 @@ public class Group extends BaseModel{
         this.description = description;
     }
 
-    public List<User> getUsers() {
-        return users;
-    }
-
-    public void setUsers(List<User> users) {
-        this.users = users;
-    }
-
-    public List<User> getAdmins() {
-        return admins;
-    }
-
-    public void setAdmins(List<User> admins) {
-        this.admins = admins;
-    }
+//    public List<User> getUsers() {
+//        return users;
+//    }
+//
+//    public void setUsers(List<User> users) {
+//        this.users = users;
+//    }
+//
+//    public List<User> getAdmins() {
+//        return admins;
+//    }
+//
+//    public void setAdmins(List<User> admins) {
+//        this.admins = admins;
+//    }
 
     public Date getCreatedAt() {
         return createdAt;
